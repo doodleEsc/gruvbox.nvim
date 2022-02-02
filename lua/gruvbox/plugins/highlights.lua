@@ -271,7 +271,9 @@ local plugins = {
   mailQuoted6 = base.GruvboxOrange,
   mailSignature = base.Comment,
   -- vim-floaterm
-  FloatermBorder = base.GruvboxOrange
+  FloatermBorder = base.GruvboxOrange,
+  -- lsp_signature
+  LspSignatureActiveParameter = base.GruvboxRed,
 }
 
 return plugins
