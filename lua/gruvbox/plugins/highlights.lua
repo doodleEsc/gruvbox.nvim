@@ -69,7 +69,7 @@ local plugins = {
   TSTagDelimiter = base.GruvboxGreen,
 
   -- telescope.nvim
-  TelescopeSelection = base.Search,
+  TelescopeSelection = base.GruvboxOrangeBold,
   TelescopeSlectionCaret = base.GruvboxRed,
   TelescopeMultiSelection = base.GruvboxGray,
   TelescopeNormal = base.GruvboxFg1,
