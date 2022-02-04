@@ -69,15 +69,15 @@ local plugins = {
   TSTagDelimiter = base.GruvboxGreen,
 
   -- telescope.nvim
-  TelescopeSelection = base.GruvboxOrangeBold,
+  TelescopeSelection = base.GruvboxYellowBold,
   TelescopeSlectionCaret = base.GruvboxRed,
   TelescopeMultiSelection = base.GruvboxGray,
-  TelescopeNormal = base.GruvboxFg1,
+  TelescopeNormal = base.GruvboxBlue,
   TelescopeBorder = "TelescopeNormal",
   TelescopePromptBorder = "TelescopeNormal",
   TelescopeResultsBorder = "TelescopeNormal",
   TelescopePreviewBorder = "TelescopeNormal",
-  TelescopeMatching = base.GruvboxBlue,
+  TelescopeMatching = base.GruvboxRedBold,
   TelescopePromptPrefix = base.GruvboxRed,
   TelescopePrompt = "TelescopeNormal",
   -- lspsaga.nvim
