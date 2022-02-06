@@ -274,6 +274,9 @@ local plugins = {
   FloatermBorder = base.GruvboxOrange,
   -- lsp_signature
   LspSignatureActiveParameter = base.GruvboxRed,
+  -- vim-translator
+  TranslatorBorder = base.FloatBorder;
+  Translator = base.Normal
 }
 
 return plugins
