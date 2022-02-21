@@ -278,7 +278,7 @@ local plugins = {
   TranslatorBorder = base.FloatBorder;
   Translator = base.Normal,
   -- symbols-outline
-  FocusedSymbol = { bg = base.GruvboxYellow.fg, gui = styles.bold }
+  FocusedSymbol = { fg = base.GruvboxBg1.fg, bg = base.GruvboxYellow.fg, gui = styles.bold }
 }
 
 return plugins
