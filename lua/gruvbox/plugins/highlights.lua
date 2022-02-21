@@ -276,7 +276,9 @@ local plugins = {
   LspSignatureActiveParameter = base.GruvboxRed,
   -- vim-translator
   TranslatorBorder = base.FloatBorder;
-  Translator = base.Normal
+  Translator = base.Normal,
+  -- symbols-outline
+  FocusedSymbol = { bg = base.GruvboxYellow, gui = styles.bold }
 }
 
 return plugins
