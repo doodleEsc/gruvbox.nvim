@@ -197,7 +197,7 @@ local base_group = {
   MoreMsg = "GruvboxYellowBold",
   NonText = "GruvboxBg2",
   Normal = { fg = fg1, bg = bg0 },
-  Pmenu = { fg = fg1, bg = bg1 },
+  Pmenu = { fg = fg1, bg = bg0 },
   PmenuSel = { fg = bg2, bg = blue, gui = styles.bold },
   PmenuSbar = { bg = bg2 },
   PmenuThumb = { bg = bg4 },
