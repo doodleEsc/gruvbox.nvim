@@ -278,7 +278,11 @@ local plugins = {
   TranslatorBorder = base.FloatBorder;
   Translator = base.Normal,
   -- symbols-outline
-  FocusedSymbol = { fg = base.GruvboxBg1.fg, bg = base.GruvboxYellow.fg, gui = styles.bold }
+  FocusedSymbol = { fg = base.GruvboxBg1.fg, bg = base.GruvboxYellow.fg, gui = styles.bold },
+  -- renamer.nvim
+  RenamerNormal = base.Normal,
+  RenamerBorder = base.GruvboxBlueBold,
+  RenamerTitle = base.Title
 }
 
 return plugins
