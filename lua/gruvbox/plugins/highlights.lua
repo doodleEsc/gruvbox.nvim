@@ -282,7 +282,9 @@ local plugins = {
   -- renamer.nvim
   RenamerNormal = base.Normal,
   RenamerBorder = base.GruvboxBlueBold,
-  RenamerTitle = base.Title
+  RenamerTitle = base.Title,
+  -- lightbulb
+  LspDiagnosticsDefaultInformation = base.GruvboxYellowSign,
 }
 
 return plugins
