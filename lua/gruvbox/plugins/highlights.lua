@@ -213,7 +213,7 @@ local plugins = {
   GitGutterChangeDelete = base.GruvboxAquaSign,
   -- gitsigns.nvim
   GitSignsAdd = base.GruvboxGreenSign,
-  GitSignsChange = base.GruvboxAquaSign,
+  GitSignsChange = base.GruvboxOrangeSign,
   GitSignsDelete = base.GruvboxRedSign,
   GitSignsCurrentLineBlame = base.NonText,
   -- nvim-cmp
