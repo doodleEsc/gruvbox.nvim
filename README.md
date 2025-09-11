@@ -1,7 +1,7 @@
 <div align="center">
       <h1> <img src="https://i.postimg.cc/WpQzgxVh/plugin-Icon.png" width="80px"><br/>gruvbox.nvim</h1>
      </div>
-<p align="center"> 
+<p align="center">
       <a href="https://twitter.com/intent/user?screen_name=ellisonleao" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ellisonleao?style=for-the-badge" style="vertical-align:center" ></a>
       <a href="#"><img alt="Made with Lua" src="https://img.shields.io/badge/Made%20with%20Lua-blueviolet.svg?style=for-the-badge&logo=lua" style="vertical-align:center" /></a>
 </p>
@@ -135,3 +135,29 @@ Please note that the override values must follow the attributes from the highlig
 - **italic** - true or false for italic font
 
 Other values can be seen in [`synIDattr`](<https://neovim.io/doc/user/builtin.html#synIDattr()>)
+
+# Lualine Support
+
+Gruvbox.nvim includes built-in support for [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) status line plugin.
+
+## Usage
+
+To use the gruvbox theme with lualine, simply configure lualine with the gruvbox theme:
+
+```lua
+require('lualine').setup {
+  options = {
+    theme = require('gruvbox').lualine() -- dark | light | nil
+    -- ... other lualine options
+  }
+}
+```
+
+The theme automatically adapts to your `background` setting (dark/light) and respects gruvbox configuration options.
+
+## Features
+
+- **Auto-detection**: Automatically selects dark or light variant based on `vim.o.background`
+- **Mode-aware colors**: Different colors for each Vim mode (normal, insert, visual, replace, command, inactive)
+- **Consistent styling**: Uses the same color palette as your gruvbox theme
+- **Full compatibility**: Works with all gruvbox configuration options
