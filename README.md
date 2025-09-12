@@ -142,12 +142,42 @@ Gruvbox.nvim includes built-in support for [lualine.nvim](https://github.com/nvi
 
 ## Usage
 
-To use the gruvbox theme with lualine, simply configure lualine with the gruvbox theme:
+### Method 1: Traditional API (Backward Compatible)
 
 ```lua
 require('lualine').setup {
   options = {
     theme = require('gruvbox').lualine() -- dark | light | nil
+    -- ... other lualine options
+  }
+}
+```
+
+### Method 2: Integrations Module (Recommended)
+
+```lua
+require('lualine').setup {
+  options = {
+    theme = require('gruvbox.integrations.lualine').get() -- dark | light | nil
+    -- ... other lualine options
+  }
+}
+```
+
+### Dynamic Integration Management
+
+```lua
+local integrations = require('gruvbox.integrations')
+
+-- List all available integrations
+print(vim.inspect(integrations.list())) -- { "lualine" }
+
+-- Get integration dynamically
+local lualine_theme = integrations.get('lualine').get()
+
+require('lualine').setup {
+  options = {
+    theme = lualine_theme
     -- ... other lualine options
   }
 }
@@ -161,3 +191,24 @@ The theme automatically adapts to your `background` setting (dark/light) and res
 - **Mode-aware colors**: Different colors for each Vim mode (normal, insert, visual, replace, command, inactive)
 - **Consistent styling**: Uses the same color palette as your gruvbox theme
 - **Full compatibility**: Works with all gruvbox configuration options
+
+# Bufferline Support
+
+Gruvbox.nvim includes built-in support for [bufferline.nvim](https://github.com/akinsho/bufferline.nvim) buffer line plugin.
+
+## Usage
+
+```lua
+require('bufferline').setup {
+  highlights = require('gruvbox.integrations.bufferline').get(),
+  -- ... other bufferline options
+}
+```
+
+The bufferline integration provides:
+
+- **Consistent theming**: Matches your gruvbox color scheme
+- **Transparent mode support**: Respects the `transparent_mode` setting
+- **Full diagnostic support**: Proper coloring for error, warning, info, and hint indicators
+- **Buffer state indicators**: Clear visual distinction between active, visible, and background buffers
+- **Customizable styling**: Respects gruvbox's bold and other style options
