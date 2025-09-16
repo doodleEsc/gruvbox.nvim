@@ -8,7 +8,7 @@ function M.get()
   return {
 
     buffer_selected = {
-      fg = colors.fg0,
+      fg = colors.yellow,
       bg = config.transparent_mode and "NONE" or colors.bg0,
       bold = config.bold,
       italic = false,
